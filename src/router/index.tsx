@@ -1,16 +1,24 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router-dom'
+import { lazy } from 'react'
+import { homeRoutes } from './homeRoutes'
 
-import BasePage from '../pages/BasePage'
-import HomePage from '../pages/HomePage'
+const Layout = lazy(() => import('../app/layout'))
+const RecentPage = lazy(() => import('../app/recent/page'))
+const SeasonPage = lazy(() => import('../app/season/page'))
 
-const AppRoutes: React.FC = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<BasePage />} />
-      <Route path="/home" element={<HomePage />} />
-    </Routes>
-  );
-};
-
-export default AppRoutes;
+export const routes = createBrowserRouter([
+  {
+    element: <Layout />,
+    children: [
+      homeRoutes,
+      {
+        path: 'recent',
+        element: <RecentPage />,
+      },
+      {
+        path: 'season',
+        element: <SeasonPage />,
+      },
+    ],
+  },
+])
