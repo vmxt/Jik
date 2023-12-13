@@ -22,6 +22,15 @@ dependencies:
     version: 6.20.1(react-dom@18.2.0)(react@18.2.0)
 
 devDependencies:
+  '@iconify-json/carbon':
+    specifier: ^1.1.26
+    version: 1.1.26
+  '@iconify-json/streamline-emojis':
+    specifier: ^1.1.8
+    version: 1.1.8
+  '@iconify-json/svg-spinners':
+    specifier: ^1.1.2
+    version: 1.1.2
   '@types/react':
     specifier: ^18.2.43
     version: 18.2.45
@@ -675,6 +684,24 @@ packages:
 
   /@humanwhocodes/object-schema@2.0.1:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
+    dev: true
+
+  /@iconify-json/carbon@1.1.26:
+    resolution: {integrity: sha512-0y6JstqPCsjEiUuyTTdHE7Wd9gGlxzH2dEfvKUJe5E741qRgLlIipVdBoCkOtbyAT92WEcU8BNfDaC585OCC8w==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/streamline-emojis@1.1.8:
+    resolution: {integrity: sha512-nX5uFLZDdz2n5gBn7g4UHn5e0xBWTWq98Lek5onH0/MgJawFXMwHvuDs4ZKO0I8n5UGFtCkYXIqX0j+J93cHNQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/svg-spinners@1.1.2:
+    resolution: {integrity: sha512-Aab6SqkORaTJ1W+ooufn6C8BsBitrn3uk8iRQLPA6pjhyvQAhkKCGMctyXIL5ZjrycnoFVsZ4mx7KnwEMra8qg==}
+    dependencies:
+      '@iconify/types': 2.0.0
     dev: true
 
   /@iconify/types@2.0.0:
