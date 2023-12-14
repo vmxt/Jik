@@ -10,7 +10,6 @@ export default function Layout() {
   return (
     <div>
       <AppHeader />
-      <h1>Main Layout</h1>
       <Suspense fallback={<AppLoading />}>
         <Outlet />
       </Suspense>

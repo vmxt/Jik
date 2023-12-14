@@ -20,11 +20,17 @@ dependencies:
   react-router-dom:
     specifier: ^6.20.1
     version: 6.20.1(react-dom@18.2.0)(react@18.2.0)
+  swiper:
+    specifier: ^11.0.5
+    version: 11.0.5
 
 devDependencies:
   '@iconify-json/carbon':
     specifier: ^1.1.26
     version: 1.1.26
+  '@iconify-json/mdi':
+    specifier: ^1.1.62
+    version: 1.1.62
   '@iconify-json/streamline-emojis':
     specifier: ^1.1.8
     version: 1.1.8
@@ -688,6 +694,12 @@ packages:
 
   /@iconify-json/carbon@1.1.26:
     resolution: {integrity: sha512-0y6JstqPCsjEiUuyTTdHE7Wd9gGlxzH2dEfvKUJe5E741qRgLlIipVdBoCkOtbyAT92WEcU8BNfDaC585OCC8w==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/mdi@1.1.62:
+    resolution: {integrity: sha512-VEfnaIwO++vZ5xUYdbPuB303E1Db29kRfkd+n9dxC0zQQ6fTy4TEI2Q79TYZtEPwiIOWOy8pudTbOv4GLUaziA==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
@@ -2521,6 +2533,11 @@ packages:
     dependencies:
       has-flag: 4.0.0
     dev: true
+
+  /swiper@11.0.5:
+    resolution: {integrity: sha512-rhCwupqSyRnWrtNzWzemnBLMoyYuoDgGgspAm/8iBD3jCvAWycPLH4Z3TB0O5520DHLzMx94yUMH/B9Efpa48w==}
+    engines: {node: '>= 4.7.0'}
+    dev: false
 
   /text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
