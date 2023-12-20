@@ -1,9 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
-import 'swiper/css/effect-fade'
 import '../../index.css'
-import { Autoplay, EffectFade, Pagination } from 'swiper/modules'
+import { Autoplay, Pagination } from 'swiper/modules'
 import { useNavigate } from 'react-router-dom'
 
 interface AppCarouselProps {
@@ -28,10 +27,11 @@ function AppCarousel({ spotlightAnimes }: AppCarouselProps) {
     <Swiper
       pagination={{
         clickable: true,
+        dynamicBullets: true
       }}
       effect={'fade'}
       loop={true}
-      modules={[Pagination, Autoplay, EffectFade]}
+      modules={[Pagination, Autoplay]}
       autoplay={{
         delay: 5000,
       }}
